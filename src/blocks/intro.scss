@@ -1,0 +1,37 @@
+.intro {
+  padding: 40px 40px 40px 80px;
+  background: url(../images/intro-bg.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 40px;
+
+  @media screen and (max-width: 960px) {
+    & {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $secondary-text;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $primary-text;
+    max-width: 420px;
+  }
+}
