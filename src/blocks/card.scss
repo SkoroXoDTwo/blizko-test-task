@@ -23,6 +23,10 @@
     line-height: 26px;
     color: $primary-text;
     border-bottom: 2px solid $ternary-text;
+
+    &_blue {
+      border-bottom: 2px solid $blue-color;
+    }
   }
 
   &__container {
@@ -72,6 +76,7 @@
     font-size: 22px;
     line-height: 30px;
     color: $primary-text;
+    min-width: 120px;
   }
 
   &__tariff-list {
@@ -126,6 +131,10 @@
       cursor: pointer;
       opacity: 0.6;
     }
+
+    &_blue {
+      color: $blue-color;
+    }
   }
 
   &__more-container {
@@ -174,6 +183,10 @@
     border-radius: 50%;
     background: $ternary-text;
     margin-right: 10px;
+
+    &_blue {
+      background: $blue-color;
+    }
   }
 
   &__list-text {

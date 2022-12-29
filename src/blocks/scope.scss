@@ -1,0 +1,111 @@
+.scope {
+  display: flex;
+  padding: 40px 16px;
+  gap: 8px;
+
+  @media screen and (max-width: 960px) {
+    & {
+      padding: 20px 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 16px 0;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 23px;
+    padding: 0;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $primary-text;
+
+    @media screen and (max-width: 550px) {
+      & {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  &__card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 3rem -1rem rgb(0 0 0 / 50%);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: transform 0.2s;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+
+  &__card-header {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &__card-icon {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 24px;
+  }
+
+  &__card-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: $ternary-text;
+  }
+
+  &__card-text {
+    margin: 0 0 20px;
+    padding: 0;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary-text;
+  }
+
+  &__card-btn {
+    margin: 0;
+    padding: 6px;
+    background: $ternary-text;
+    border-radius: 20px;
+    color: $secondary-text;
+    width: 100%;
+    transition: opacity 0.2s;
+    text-decoration: none;
+    text-align: center;
+
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+}
