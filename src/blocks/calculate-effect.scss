@@ -1,0 +1,52 @@
+.calculate-effect {
+  padding: 0 16px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background: $secondary-bg;
+    border-radius: 20px;
+  }
+
+  &__title {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (max-width: 550px) {
+      & {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &__text {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+
+    @media screen and (max-width: 550px) {
+      & {
+        font-size: 14px;
+      }
+    }
+
+    &:last-child {
+      margin: 10px 0 0;
+    }
+  }
+}
