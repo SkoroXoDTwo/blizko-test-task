@@ -1,0 +1,117 @@
+.card {
+  padding: 90px 80px 20px;
+  box-shadow: 2px 2px 10px 4px rgb(55 55 55 / 13%);
+  border-radius: 20px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__title {
+    margin: 0 0 16px;
+    padding: 0 32px 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: $primary-text;
+    position: absolute;
+    top: 32px;
+    left: 0;
+    border-bottom: 2px solid $ternary-text;
+  }
+
+  &__text {
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary-text;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__btn-more {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $ternary-text;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    transition: opacity 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+
+  &__more-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    transition: max-height 0.2s;
+    overflow: hidden;
+  }
+
+  &__subtitle {
+    margin: 0 0 8px;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $primary-text;
+
+    &:first-child {
+      margin: 20px 0 8px;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__list-item {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__list-circle {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background: $ternary-text;
+    margin-right: 10px;
+  }
+
+  &__list-text {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary-text;
+  }
+
+  &__line {
+    margin: 16px 0;
+    padding: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom:1px solid $primary-text;
+  }
+}
