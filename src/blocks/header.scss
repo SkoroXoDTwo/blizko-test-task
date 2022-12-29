@@ -1,0 +1,131 @@
+.header {
+  padding: 15px 16px;
+  background: $secondary-bg;
+  display: flex;
+  align-items: flex-start;
+  display: fixed;
+  background-image: url(../images/garland.png);
+  background-size: 200px 30px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  &__logo-img {
+    width: 150px;
+    height: 30px;
+    background: url(../images/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__logo-text {
+    padding: 0;
+    margin: 5px 0 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: $primary-text;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+
+    @media screen and (max-width: 960px) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  &__menu-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 14px;
+
+    @media screen and (max-width: 1200px) {
+      & {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-items: center;
+      }
+    }
+  }
+
+  &__navigation-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: $primary-text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    transition: text-decoration 0.2s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_active {
+      text-decoration: underline;
+      cursor: default;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contacts-title {
+    padding: 0;
+    margin: 0 0 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $primary-text;
+  }
+
+  &__contacts-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  &__phone-number {
+    padding: 0;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__contacts-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+}

@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0"
-  >
-  <meta http-equiv="X-UA-Compatible"
-        content="ie=edge"
-  >
-  <title></title>
-</head>
-<body class="body">
-  <div class="page"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+  </head>
+  <body class="body">
+    <div class="page">
+      <div class="header">
+        <a class="header__logo" href="#">
+          <div class="header__logo-img"></div>
+          <p class="header__logo-text">Для бизнеса</p>
+        </a>
+        <div class="header__menu">
+          <nav>
+            <ul class="header__menu-navigation">
+              <li>
+                <a class="header__navigation-link" href="#">
+                  Как продавать на BLIZKO
+                </a>
+              </li>
+              <li>
+                <a
+                  class="header__navigation-link header__navigation-link_active"
+                  href="#"
+                >
+                  Прайс-лист
+                </a>
+              </li>
+              <li>
+                <a class="header__navigation-link" href="#">Создать сайт</a>
+              </li>
+              <li>
+                <a class="header__navigation-link" href="#">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="btn-blue" href="#">Зарегистрировать компанию</a>
+          <div class="header__contacts">
+            <h2 class="header__contacts-title">Мы на связи:</h2>
+            <div class="header__contacts-row">
+              <a class="header__contacts-link">
+                <img
+                  class="header__contacts-icon"
+                  src="<%=require('./images/phone-icon.svg')%>"
+                  alt="Телефон"
+                />
+                <p class="header__phone-number">8-800-7000-191</p>
+              </a>
+              <a class="header__contacts-link">
+                <img
+                  class="header__contacts-icon"
+                  src="<%=require('./images/whatsap-icon.svg')%>"
+                  alt="Ватсап"
+                />
+              </a>
+              <a class="header__contacts-link">
+                <img
+                  class="header__contacts-icon"
+                  src="<%=require('./images/telegram-icon.svg')%>"
+                  alt="Телеграм"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

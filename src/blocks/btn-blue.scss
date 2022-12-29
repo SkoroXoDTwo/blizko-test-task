@@ -1,0 +1,17 @@
+.btn-blue {
+  padding: 6px 12px;
+  background-color: $primary-btn;
+  color: $secondary-text;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: opacity 0.2s;
+  border-radius: 20px;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
