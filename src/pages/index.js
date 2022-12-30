@@ -3,6 +3,8 @@ import "./index.scss";
 const headerBlock = document.querySelector('.header');
 const pageBlock = document.querySelector('.page');
 const moreBtns = document.querySelectorAll('.card__btn-more');
+const burgerBtn = document.querySelector('.header__burger');
+const headerMenu = document.querySelector('.header__menu');
 
 pageBlock.style.paddingTop = `${headerBlock.offsetHeight}px`
 
@@ -20,3 +22,15 @@ moreBtns.forEach((btn) => {
     }
   })
 });
+
+burgerBtn.addEventListener(('click'), (e) => {
+
+  if(headerMenu.style.maxHeight) {
+    burgerBtn.classList.remove('header__burger_close');
+    headerMenu.style.maxHeight = null;
+  }
+  else {
+    burgerBtn.classList.add('header__burger_close');
+    headerMenu.style.maxHeight = headerMenu.scrollHeight + 'px';
+  }
+})

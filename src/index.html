@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title></title>
+    <base target="_blank">
   </head>
-  <body class="body">
+  <body class="body" >
     <div class="page">
       <header class="header">
-        <a class="header__logo" href="#">
-          <div class="header__logo-img"></div>
-          <p class="header__logo-text">Для бизнеса</p>
-        </a>
+        <div class="header__container">
+          <a class="header__logo" href="#">
+            <div class="header__logo-img"></div>
+            <p class="header__logo-text">Для бизнеса</p>
+          </a>
+          <button class="header__burger"></button>
+        </div>
+
         <div class="header__menu">
           <nav>
             <ul class="header__menu-navigation">
               <li>
-                <a class="header__navigation-link" href="#">
+                <a
+                  class="header__navigation-link"
+                  href="https://ekb.blizko.ru/sellers/?area=header_com"
+                >
                   Как продавать на BLIZKO
                 </a>
               </li>
@@ -30,19 +38,31 @@
                 </a>
               </li>
               <li>
-                <a class="header__navigation-link" href="#">Создать сайт</a>
+                <a
+                  class="header__navigation-link"
+                  href="https://ekb.blizko.ru/sellers/create_a_website/?area=header_com"
+                  >Создать сайт</a
+                >
               </li>
               <li>
-                <a class="header__navigation-link" href="#">Отзывы</a>
+                <a
+                  class="header__navigation-link"
+                  href="https://ekb.blizko.ru/sellers/response/?area=header_com"
+                  >Отзывы</a
+                >
               </li>
             </ul>
           </nav>
 
-          <a class="btn-blue" href="#">Зарегистрировать компанию</a>
+          <a
+            class="btn-blue"
+            href="https://ekb.blizko.ru/company_wizard/new?page=sellersreklama&button=true&type=dk"
+            >Зарегистрировать компанию</a
+          >
           <div class="header__contacts">
             <h2 class="header__contacts-title">Мы на связи:</h2>
             <div class="header__contacts-row">
-              <a class="header__contacts-link">
+              <a class="header__contacts-link" href="tel:+78007000191">
                 <img
                   class="header__contacts-icon"
                   src="<%=require('./images/phone-icon.svg')%>"
@@ -50,14 +70,20 @@
                 />
                 <p class="header__phone-number">8-800-7000-191</p>
               </a>
-              <a class="header__contacts-link">
+              <a
+                class="header__contacts-link"
+                href="https://api.whatsapp.com/send/?phone=79221017318&text&type=phone_number&app_absent=0"
+              >
                 <img
                   class="header__contacts-icon"
                   src="<%=require('./images/whatsap-icon.svg')%>"
                   alt="Ватсап"
                 />
               </a>
-              <a class="header__contacts-link">
+              <a
+                class="header__contacts-link"
+                href="https://telegram.me/blizko_business/?area=header_com"
+              >
                 <img
                   class="header__contacts-icon"
                   src="<%=require('./images/telegram-icon.svg')%>"
@@ -67,7 +93,6 @@
             </div>
           </div>
         </div>
-        <button class="header__burger"></button>
       </header>
 
       <main>
@@ -228,7 +253,11 @@
                         Зарегистрируйте компанию и получите информацию о своем
                         тарифе
                       </h3>
-                      <a class="btn-blue" href="#">Зарегистрировать компанию</a>
+                      <a
+                        class="btn-blue"
+                        href="https://ekb.blizko.ru/company_wizard/new?page=sellersreklama&button=true&type=rc_standart"
+                        >Зарегистрировать компанию</a
+                      >
                     </div>
                   </div>
                 </article>
@@ -894,7 +923,9 @@
                 </article>
               </li>
               <li>
-                <a class="btn-blue" href="#"
+                <a
+                  class="btn-blue"
+                  href="https://ekb.blizko.ru/company_wizard/new?page=sellersreklama&button=true&type=rc_standart"
                   >Зарегистрировать компанию и начать продажи</a
                 >
               </li>
@@ -1079,6 +1110,7 @@
             </ul>
           </div>
         </section>
+
         <section class="scope">
           <span class="arrow"></span>
           <div class="scope__container">
@@ -1102,7 +1134,11 @@
                     Подключим дополнительные рекламные каналы: контекстную
                     рекламу, социальные сети и т.д.
                   </p>
-                  <a class="scope__card-btn" href="#">Подробнее</a>
+                  <a
+                    class="scope__card-btn"
+                    href="https://ekb.blizko.ru/sellers/megatraffic"
+                    >Подробнее</a
+                  >
                 </article>
               </li>
               <li>
@@ -1119,7 +1155,11 @@
                     Выделим ваши предложения, разместив медийный баннер в
                     товарных рубриках на торговой площадке BLIZKO.
                   </p>
-                  <a class="scope__card-btn" href="#">Подробнее</a>
+                  <a
+                    class="scope__card-btn"
+                    href="https://ekb.blizko.ru/sellers/banner"
+                    >Подробнее</a
+                  >
                 </article>
               </li>
               <li>
@@ -1136,7 +1176,11 @@
                     Приведем на ваш сайт дополнительных посетителей из
                     социальных сетей.
                   </p>
-                  <a class="scope__card-btn" href="#">Подробнее</a>
+                  <a
+                    class="scope__card-btn"
+                    href="https://ekb.blizko.ru/sellers/social_network"
+                    >Подробнее</a
+                  >
                 </article>
               </li>
             </ul>
@@ -1277,32 +1321,40 @@
           <nav>
             <ul class="footer__column-list">
               <li>
-                <a class="footer__column-link" href=""
+                <a
+                  class="footer__column-link"
+                  href="https://ekb.blizko.ru/sellers/?area=footer_com"
                   >Как продавать на BLIZKO</a
                 >
               </li>
               <li>
                 <a
                   class="footer__column-link footer__column-link_margin"
-                  href=""
+                  href="https://ekb.blizko.ru/sellers/start_of_online_sales/?area=footer_com"
                   >Старт интернет-продаж</a
                 >
               </li>
               <li>
                 <a
                   class="footer__column-link footer__column-link_margin"
-                  href=""
+                  href="https://ekb.blizko.ru/sellers/internet_sales_growth/?area=footer_com"
                   >Рост интернет-продаж</a
                 >
               </li>
               <li>
-                <a class="footer__column-link" href="">Подобрать тариф</a>
+                <a class="footer__column-link" href="#">Подобрать тариф</a>
               </li>
               <li>
-                <a class="footer__column-link" href="">Отзывы наших клиентов</a>
+                <a
+                  class="footer__column-link"
+                  href="https://ekb.blizko.ru/sellers/response/?area=footer_com"
+                  >Отзывы наших клиентов</a
+                >
               </li>
               <li>
-                <a class="footer__column-link" href=""
+                <a
+                  class="footer__column-link"
+                  href="https://ekb.blizko.ru/sellers/create_a_website?page=sellersreklama&type=ssb&footer"
                   >Создать сайт на BLIZKO</a
                 >
               </li>
@@ -1314,12 +1366,18 @@
           <nav>
             <ul class="footer__column-list">
               <li>
-                <a class="footer__column-link" href=""
+                <a
+                  class="footer__column-link"
+                  href="https://ekb.blizko.ru/sellers/FAQ/?area=footer_com"
                   >Помощь по работе с BLIZKO</a
                 >
               </li>
               <li>
-                <a class="footer__column-link" href="">Расписание вебинаров</a>
+                <a
+                  class="footer__column-link"
+                  href="https://ekb.blizko.ru/sellers/webinar/?area=footer_com"
+                  >Расписание вебинаров</a
+                >
               </li>
             </ul>
           </nav>
@@ -1329,7 +1387,10 @@
           <nav>
             <ul class="footer__column-list footer__column-list_social">
               <li>
-                <a class="footer__column-link" href="">
+                <a
+                  class="footer__column-link"
+                  href="https://www.youtube.com/user/BlizkoBusiness/sub_confirmation=1/?area=footer_com"
+                >
                   <img
                     class="footer__link-icon"
                     src="<%=require('./images/youtube-icon.png')%>"
@@ -1338,7 +1399,10 @@
                 </a>
               </li>
               <li>
-                <a class="footer__column-link" href="">
+                <a
+                  class="footer__column-link"
+                  href="https://vk.com/blizkobusiness?area=footer_com"
+                >
                   <img
                     class="footer__link-icon"
                     src="<%=require('./images/vk-icon.png')%>"
@@ -1347,7 +1411,10 @@
                 </a>
               </li>
               <li>
-                <a class="footer__column-link" href="">
+                <a
+                  class="footer__column-link"
+                  href="https://tenchat.ru/blizko?area=footer_com"
+                >
                   <img
                     class="footer__link-icon"
                     src="<%=require('./images/tenchat.png')%>"
@@ -1361,10 +1428,16 @@
           <nav>
             <ul class="footer__column-list">
               <li>
-                <a class="footer__column-link" href="">На главную</a>
+                <a
+                  class="footer__column-link"
+                  href="https://ekb.blizko.ru/?area=footer_com"
+                  >На главную</a
+                >
               </li>
               <li>
-                <a class="footer__column-link" href=""
+                <a
+                  class="footer__column-link"
+                  href="https://ekb.blizko.ru/terms/?area=footer_com"
                   >Пользовательское соглашение</a
                 >
               </li>

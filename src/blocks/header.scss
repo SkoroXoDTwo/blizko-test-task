@@ -13,11 +13,25 @@
   left: 0;
   box-sizing: border-box;
   z-index: 2;
+  gap: 20px;
 
   @media screen and (max-width: 960px) {
     & {
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
+    }
+  }
+
+  &__container {
+    @media screen and (max-width: 960px) {
+      & {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+      }
     }
   }
 
@@ -58,10 +72,15 @@
     align-items: center;
     width: 100%;
     gap: 20px;
+    transition: max-height 0.2s;
 
     @media screen and (max-width: 960px) {
       & {
-        display: none;
+
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   }
@@ -77,8 +96,18 @@
       & {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, auto);
         justify-items: center;
+      }
+    }
+
+    @media screen and (max-width: 960px) {
+      & {
+        justify-items: left;
+        grid-template-columns: repeat(1, auto);
+
+        &:first-child {
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -140,6 +169,8 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
+    color: $primary-text;
+    text-decoration: none;
   }
 
   &__contacts-icon {
@@ -164,6 +195,17 @@
     &:hover {
       cursor: pointer;
       opacity: 0.6;
+    }
+
+    &_close {
+      border-top: none;
+
+      &::after {
+        transform: translateX(0px) rotate(45deg);
+      }
+      &::before {
+        transform: translateY(-7px) rotate(-45deg);
+      }
     }
 
     @media screen and (max-width: 960px) {
