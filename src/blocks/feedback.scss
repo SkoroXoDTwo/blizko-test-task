@@ -1,0 +1,158 @@
+.feedback {
+  display: flex;
+  padding: 40px 16px;
+  gap: 8px;
+
+  @media screen and (max-width: 960px) {
+    & {
+      padding: 20px 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 16px 0;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 23px;
+    padding: 0;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: $primary-text;
+
+    @media screen and (max-width: 550px) {
+      & {
+        font-size: 25px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $primary-text;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @media screen and (max-width: 960px) {
+      & {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  &__card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 3rem -1rem rgb(0 0 0 / 50%);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: transform 0.2s;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    @media screen and (max-width: 560px) {
+      & {
+        padding: 16px;
+      }
+    }
+  }
+
+  &__card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__card-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    width: 116px;
+    height: 80px;
+    transition: opacity 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+
+  &__card-img {
+    width: 116px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  &__card-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  &__card-date {
+    font-size: 14px;
+    color: $primary-text;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__card-description {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: $primary-text;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+
+  &__card-tariff {
+    padding: 0;
+    margin: 0 0 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    color: $primary-text
+  }
+
+  &__card-title {
+    padding: 0;
+    margin: 0 0 15px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: $primary-text
+  }
+
+  &__card-text {
+    margin: 0;
+    padding: 0;
+    color: $primary-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
