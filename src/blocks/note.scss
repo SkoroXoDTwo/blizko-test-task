@@ -1,0 +1,13 @@
+.note {
+  margin: 40px ;
+  padding: 0 16px;
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #858583;
+  }
+}

@@ -42,7 +42,7 @@
   }
 
   &__list {
-    margin: 0;
+    margin: 0 0 20px;
     padding: 0;
     list-style: none;
     display: grid;
@@ -154,5 +154,21 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+  }
+
+  &__btn {
+    padding: 0;
+    margin: 0 0 20px;
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $ternary-text;
+    transition: opacity 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
   }
 }
